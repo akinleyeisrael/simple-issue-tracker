@@ -1,6 +1,5 @@
 'use client'
 
-
 import React from 'react'
 import Link from 'next/link'
 import { AiFillBug } from 'react-icons/ai';
@@ -8,6 +7,7 @@ import { link } from 'fs';
 import { usePathname } from 'next/navigation';
 
 const NavBar = () => {
+  // use client because it a browser api
     const currentPath = usePathname();
 
     const links = [
